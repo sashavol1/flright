@@ -19,7 +19,8 @@ gulp.task('connect', function() {
 gulp.task('less', function () {
   gulp.src('app/less/*.less')
     .pipe(less())
-    .pipe(gulp.dest('app/css/'));
+    .pipe(gulp.dest('app/less/'))
+    .pipe(connect.reload());
 });
 
 // Работа с HTML

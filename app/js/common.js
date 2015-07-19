@@ -1,3 +1,17 @@
+$(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+});
+
+ 
+$("#toggle").click(function(event) {
+  event.preventDefault();
+  console.log(123);
+  $(this).toggleClass("on");
+  $("#menu").slideToggle();
+ });
 $(document).ready(function() {
 
 	//Цели для Яндекс.Метрики и Google Analytics
@@ -45,9 +59,4 @@ $(document).ready(function() {
 	
 });
 
-$(window).load(function() {
 
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});

@@ -1,17 +1,73 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1280px) {
+	body .menu nav ul li a {
+		font-size: 18px;		
+	}
+	body .menu nav {
+		width:100%;
+	}
+	body .menu nav ul {
+		padding: 7px 0;
+	}
+	body .content .content-view{
+		width:100%;
+	}
+	body .content .content-inmap .content-contacts--where p {
+		width: 100%;
+	}
+	body .content .content-inmap .form {
+		padding: 5px 0 0 0 ;
+	}
+	body .content .content-inmap .form input,.content .content-inmap .form textarea,.content .content-inmap .form .btn-send {
+		width: 100%;
+	}
+	body .content .content-inmap .form input[type="submit"] {
+		width: 80%;
+	}
 }
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	body .menu nav ul li a {
+		font-size: 14px;	
+		font-weight: bold;	
+	}
+	body .menu nav ul li + li {
+		padding-left: 15px;
+	}
+	body .menu nav ul {
+		padding: 10px 0;
+	}
+	body header .header-logo img{
+		width: 75%;
+		margin: 0 auto;
+	}
+	body header .header-descript h2 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	body .content .content-page--map>ymaps{
+		min-height: 750px;
+	}
+	body .content-page img {
+		float: none;
+		width: 100%;
+	}
+	 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	body .content .content-view .item-image {
+		border-top: 2px solid #afaaaa;
+	}
+	body .content .content-inmap .form textarea, .content .content-inmap .form input {
+		font-size: 16px;
+	}
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -35,11 +91,136 @@
 		animation: none !important;
 	}
 
+	body header .header-logo img {
+		padding: 15px 70px 10px;
+	}
+	body header .header-descript h2 {
+		font-size: 12px;
+		font-weight: normal;
+	}
+	body .header-phone {
+		display:block;
+		top: 10%;
+		left: 3%;		
+	}
+	body .header-phone a{
+		width: 80px;
+		height: 80px;		
+	}
+	body .header-phone img{
+		width:70%;
+	}
+	body .menu {
+		border-bottom: none;	 
+		background: rgba(103,101,101,.95);	
+		height: auto;
+		position: absolute;
+		width: 100%;
+		border: 2px solid #fff;
+		margin-top: 0px;
+		display:none;
+	}
+	body .menu nav ul li{
+		display: block;
+		padding: 15px 0;
+		clear: both;
+	}
+	body .menu nav ul li img{
+		display: block;
+		float: right;
+		width: 26%;
+		position: relative;
+		top: -6px;
+	}
+	body .menu nav ul li + li{
+		border-top: 2px solid #fff;
+	}
+	body .menu nav ul li a{
+		color: #fff;
+		font-size: 24px;
+		font-weight: normal;
+	}
+	body .content{
+		padding-top: 5px;
+	}
+	body .menu nav {
+		width: 87%;
+	}
+
+	body #toggle {
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 10%;
+	right: 5%;	  
+	   
+	}
+	 
+	#toggle img  { 
+		width:70%;
+		float: right;
+	}
+	 
+	 
+	#toggle.on:after  {
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #676565;
+	position: absolute;
+	top: 24px;
+	right: -11px;
+	}
+	#toggle.on + #menu {
+	  opacity: 1;
+	}
+	body .content .content-view {
+		margin-bottom: 0;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	body .menu nav ul li a {
+		font-size: 16px;
+	}
+	body .menu nav ul li img {
+		width: 30%;
+		top: -3px;
+	}
+	body .menu nav ul li {
+		padding: 10px 0;
+		top: -20px;
+	}
+	body header .header-logo img {
+		padding: 15px 50px 10px;
+	}
+	#toggle img, body .header-phone img {
+		width: 50%;
+	}
+	#toggle.on:after  { 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 5px solid #676565; 
+	top: 19px;
+	right: -8px;
+}
+body header .header-descript h2 {
+	font-size: 9px;
+}
+ body .content .content-page--title h2 {
+ 	margin:0;
+ }
+  body .content .content-inmap .form input[type="submit"] {
+  	padding: 12px 5px;
+  }
+  body .content .content-inmap .content-contacts--where p {
+  	font-size: 14px;
+  }
 }
 
 /* Custom, iPhone Retina */
